@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Introduction to Python</title>
+  <title>Python|Programming</title><link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="img/png" href="favicon.png" >
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+<main id="main-doc">
+  
+  <nav id="navbar">
+    <header>Introduction to Scratch</header>
+   
+      <a class="nav-link" href="#What_Is_Python?">Overview of Scratch</a>
+      <a class="nav-link" href="#Installing_Python">The Scratch GUI</a>
+      <a class="nav-link" href="#Hello_World">Selecting a Sprite</a>
+      <a class="nav-link" href="#Creating_Python_File">Adding Background</a>
+      <a class="nav-link" href="#Save_File">Animate Sprite</a>
+      <a class="nav-link" href="#Running_file">Finishing</a>
+      <a class="nav-link" href="#Resources">Summary & Further Resources</a>
+  </nav>
+  
+  <div id="content">
+  
+  <section class="main-section" id="What_Is_Python?">
+    <header>Scratch Overview & GUI</header>
+    <p><span class="left"> This tutorial shows you how to create animations in Scratch. It does this by taking you through a step-by-step procedure to create an animated sprite - i.e. one of the images or characters that populate the Scratch universe. <span class="left"><img src="https://i.ibb.co/fkFZpwf/scratch.gif" alt="boy" border="0" width="170px" height="170px" alt="example graphic"></span>The lesson will cover the basics of working with Scratch to develop animations. It assumes no prior knowledge of scratch coding by a learner. By the end of this tutorial, learners should have a basic familiarity with the Scratch program and its interface. Also, they should be able to recognize and identify basic commands and processes required for working in Scratch. Again, they should be familiar with the steps involved in creating simple animation using the Scratch platform. As an interactive programming platform and language, the Scratch program is intended to help improve your learning experiences by enabling you to think creatively and critically. It will also help you develop skills in working easily and well with others. For more on the Scratch platform,
+              check out their website<a href="https://scratch.mit.edu/parents/" style="color:blue; text-decoration: none;"> here</a>. We would be going through the activities in this tutorial one step at a time. As such, the pace of delivery may be slower 
+              than most learners are used to. Below is an image of the Scratch GUI, which I describe in the next section<br><br>
+    <p style="text-align: center;"><img src="https://i.ibb.co/BsX2421/imageedit-2-3927737047.png" alt="first screen" width="700px" height="400px" border="0"></p><figcaption style="text-align: center;">The Scratch GUI Platform</figcaption></ol><br><br>
+              
+
+              
+  </section>
+  
+  <section class="main-section" id="Installing_Python">
+    <header>The Scratch GUI</header>
+    <p>Now, we will explore the Scratch generic user interface (GUI). To do this:
+                <ul>
+                <li>Navigate to the Scratch web platform by either typing <em style="color:blue">https://scratch.mit.edu/</em> into your browser 
+              console, or by using Google search to navigate to the official Scratch web page</li>
+              <li>If you already have an account, go to the top right corner of the page and <strong style="color:navy">sign in</strong>. Otherwise <strong style="color:navy">register</strong> for a new account by going through their simple, straightforward account registration process</li>
+              <li>When you are ready to begin, move your cursor to the top left corner of the page, locate the tab named <strong style="color: blue">Create</strong>, click on it, then wait for
+              the new page to load.</li><br>
+  
+              <p>Looking at the Scratch interface for the first time, you notice that there are so many tabs and components. However, we will focus on the main ones which are described in the table below:<br><br></p>
+              <table style="width:900px; border-spacing:0; margin-left:auto; margin-right:auto">
+                <tr>
+                  <th>Component</th>
+                  <th>What it does</th></tr>
+                <tr>
+                  <td>Menu</td>
+                  <td>Used to save and load files</td></tr>
+                <tr>
+                  <td>Code Blocks</td>
+                  <td>Contain reusable code blocks to control and add behaviour to your program</td></tr>
+                <tr>
+                  <td>Script Editor</td>
+                  <td>This is the area where you build or develop your code logic</td></tr>
+                <tr>
+                  <td>Stage</td>
+                  <td>This area displays your program's execution outputs</td></tr>
+                <tr>
+                  <td>Program Control</td>
+                  <td>This feature allows you to control the starting and stopping of your program</td></tr>  
+                <tr>
+                  <td>Sprite Control</td>
+                  <td>Allows you to add, update, remove and define sprites</td></tr>
+                <tr>
+                  <td>Backdrop Control</td>
+                  <td>This feature allows you to add, update, remove or define backgrounds</td></tr>
+              </table><br><figcaption style="text-align: center;">Some common components of the Scratch platform and what they do</figcaption>
+
+              <p>The following image provides a more concise and detailed overview of the Scratch GUI:</p><br>
+              
+              <p style="text-align: center;"><img src="https://i.ibb.co/RT9XSg3/imageedit-5-7193519661.png" alt="Interface" width="800px" height="500px" border="0"></p><figcaption style="text-align: center;">Annoted Scratch GUI platform</figcaption><br>
+              <p>We will learn about the various components identified above as we move along in our lessons</p>
+    
+
+
+
+    <!--<pre>
+    <code class="css">
+      {div class="flex-container"
+        div{Box 1}div
+        div{Box 2}div
+      div}
+    </code>
+    </pre>
+    <p>By doing so, it is easier to target the items and give them their properties in CSS or in the <code>style</code> tag.</p>
+    
+    <p>From these CSS codes:</p>
+    
+  <pre>  
+    <code class="css">
+.flex-container {
+  display: flex;
+  background-color: #6b8e23;
+  flex-direction: row;
+  align-content: center;
+  margin-right: 250px;
+}
+
+#box-1 {
+  padding: 30px;
+  margin: 5px;
+  border: solid 2px black;
+}
+
+#box-2 {
+  padding: 30px;
+  margin: 5px;
+  border: solid 3px black;
+}
+    </code>
+   </pre>
+    
+    <p>To this:</p>
+    <div id="flex-box">
+      <div id="box-1">Box 1</div>
+      <div id="box-2">Box 2</div>
+    </div>
+    <ul>
+      <li>The background-color OliveDrab is the flex-container with its distinct properties</li>
+      <li>Box 1 and Box 2 are the flex items or child items. Each with different borders, margins and paddings.</li>
+    </ul>
+    
+    <p>Think of it as a big box that wraps around flex items or child items so that the box itself can have distinct properties or characteristics of it's own, and the flex item of it's own as well. </p>
+    <p>Flexbox has it's x-axis and y-axis, namely the main axis and the cross axis which when using the alignment property, it allows you to position, or change the direction of items such as the container (box) itself or the items in it. </p>-->
+  </section>
+  
+  <section class="main-section" id="Hello_World">
+    <header>Selecting a Sprite</header><br>
+    <p>We will start off our project by selecting a <strong style="color:navy">SPRITE</strong> we would like to animate. Normally, the default sprite is the cat character which loads automatically
+              when the Scratch program is started. However, you can change this by moving your cursor to the panel named <strong style="color:navy">SPRITE CONTROL</strong>, sometimes called the <strong style="color:navy">SPRITE INFO PANE</strong>. This is a panel that shows all the 
+              information about our sprites and also allows a user to manipulate sprites. Users can make sprites active, or can create or delete sprites from this pane. Clicking on
+              the blue button with the white cat face at the bottom right side of the panel will bring up an option to choose a sprite from among several.</li>
+              <li>Now let us scroll down the options and select the sprite named <strong style="color:navy">Dog2</strong>. (I find him in the 9th row from the top). See image for reference. I like dogs. how about you?</li>
+              <span class="right"><img src="https://i.ibb.co/PrnqrTL/imageedit-10-2788205568.png" alt="dog2" border="0"></a></span>
+              <li>Now let us go to the top left corner of the <strong style="color:navy">Choose a Sprite</strong> page and click on <strong style="color:navy">Back</strong> to take us back to the main interface</li>
+              <li>You will notice that there are two sprites in the <strong style="color:navy">STAGE.</strong> panel now: the default cat and the new sprite we just added, Dog2.</li>
+              <li>You also notice that upon being added to the interface, Dog2 becomes the active sprite</li>
+              <li>Since we want to work with only a single sprite, Dog2, let us remove the other sprite, Sprite1</li>
+              <li>To do this, move your cursor to the <strong style="color:navy">SPRITE CONTROL</strong> panel and click on Sprite1. This makes it the active sprite now</li>
+              <li>Click on the bin icon on the top right corner of the Sprite1 box to delete it. We now have only one sprite named Dog2</li>
+  </section>
+  
+  <section class="main-section" id="Creating_Python_File">
+    <header>Adding Background</header>
+    <p>Now we will add a background, to give our setting a real-world feel. To do that, let us move our cursor to the <strong style="color:navy">BACKDROP CONTROL</strong>
+              panel and click on the blue button with the picture icon located at the bottom of the panel. This will bring up a list of backdrop options to choose from</li>
+              <li>Let us scroll down and select <strong style="color:navy">BLUE SKY</strong> from the list (Mine shows it is located on the 2nd row from the top). After selecting 
+              this option, move your cursor to the <strong style="color:navy">Back</strong> option at the top and click it to take us back to the main screen agan</li>
+              <li>Now you should have a screen similar to the one below</li><br><br>
+              <p style="text-align: center;"><img src="https://i.ibb.co/T4fCpJc/imageedit-13-7882517801.png" alt="bog2_backdrop" width="700px" border="0"></p>
+    <figcaption style="text-align: center;">The selected Blue Sky Backdrop</figcaption>
+    <p>It is now time to animate our sprite which we will do in the next section</p>
+   
+ </section>
+  
+  <section class="main-section" id="Save_File">
+    <header>Animating the Sprite</header>
+    <p>We are going to animate our Sprite - Dog2. To that, move your cursor to the <strong style="color:navy">CODE BLOCKS</strong> panel, and click on the <strong style="color:navy">Events</strong>
+              tab located 4th from the top (having a round yellow button)</li>
+              <li>Locate a button similar to this one <img src="https://i.ibb.co/2yCnsW2/imageedit-15-3932092901.png" alt="button1" border="0"> at the top of the list of options</li>
+              <li>Click on it then drag or move it into the <strong style="color:navy">SCRIPT EDITOR</strong>.</li> 
+              <li>Again, on the same <strong style="color:navy">CODE BLOCKS</strong> panel, locate the tab named <strong style="color:navy">Motion</strong> and then from
+              the lists of blue buttoned commands/options, select <strong style="color:navy">go to x:(number) y:(number)</strong> then drag or move it
+              into the <strong style="color:navy">SCRIPT EDITOR</strong> panel. See this image <img src="https://i.ibb.co/WPLJ3F3/imageedit-7-3625676805.png" alt="button" border="0"> for reference. On my screen, this button is located on the 5th position from the top but yours may be different. Please verify carefully</li><br>
+              <li>In the <strong style="color:navy">SCRIPT EDITOR</strong> panel, click on the <strong style="color:navy">go to x:(number) y:(number)</strong> tab
+              then drag and connect it to the other tab already in the editor. Reference the gif below for how to perform the previous 3 activities described so far</li>
+
+            <p style="text-align: center;"><img src="https://imgur.com/QNnbzt6.png" alt="bog2_backdrop" width="700px" border="5px"></p>
+
+    <figcaption style="text-align: center;">Animating the Sprite</figcaption><br>
+
+    <li>Next, move your cursor to the <strong style="color:navy">CODE BLOCKS</strong> panel again, and then select <strong style="color:navy">Control</strong>
+              from the list of options that displays. In the list, select the control option <strong style="color:navy">forever</strong> (On my screen, it is positioned at 3rd from the top).</li>
+              <li>Having selected it, drag it into the <strong style="color:navy">SCRIPT EDITOR</strong> panel, just like you did previously</li>
+              <li>In the <strong style="color:navy">SCRIPT EDITOR</strong> panel, move the control option <strong style="color:navy">forever</strong> towards the 
+              other options already present, and drop it below <strong style="color:navy">go to x:(number) y:(number)</strong> option.</li> <p>See gif below for reference</p><br>
+
+          <p style="text-align: center;"><img src="https://imgur.com/CHrbEmz.png" alt="bog2_backdrop" width="700px" border="5px"></p>
+
+    <figcaption style="text-align: center;">Adding control function</figcaption><br>
+
+  </section>
+  
+  <section class="main-section" id="Running_file">
+    <header>Finishing</header>
+    <p>We are almost done.</p> <ul><li>Now move the cursor to the <strong style="color:navy">CODE BLOCKS</strong> panel again, then select the <strong style="color:navy">Looks</strong> option from the list of codes
+                (it is the purple button located 2nd on the list from the top)</li>
+              <li>From the list of options in the <strong style="color:navy">Looks</strong> code, on the right, select <strong style="color:navy">Next Costume</strong>, and drag it into the
+              <strong style="color:navy">SCRIPT EDITOR</strong> panel.</li>.
+              <li>Insert it into the <strong style="color:navy">Control</strong> option, <strong style="color:navy">forever</strong>. See the gif below on how to do this</li></p>
+        <p style="text-align: center;"><img src="https://imgur.com/gHiHTMl.png" alt="bog2_backdrop" width="700px" border="5px"></p>
+      <figcaption style="text-align: center;">Adding the looks function</figcaption>
+
+    </ul>
+
+    <p>Now, the last but not least, step</p>. 
+    <ul><li>Move your cursor to the <strong style="color:navy">CODE BLOCKS</strong> panel one last time and select
+              <strong style="color:navy">Control</strong> from the options on the left.</li>
+              <li>From the list of <strong style="color:navy">Control</strong> options, select the one which looks similar to this button <img src="https://i.ibb.co/sJckyCM/btn.png" alt="btn" border="0">  (<strong>NOTE!!</strong> it is the first option on the list)</li>
+              
+              <li>Now drag it to the <strong style="color:navy">SCRIPT EDITOR</strong>, then hover it near the bottom of the <strong style="color:navy">Next Costume</strong>
+              option. The pane will automatically open to allow you to insert the button into it.</li>
+              <li>Once this is done, click the number 1 on the button, when it becomes highlighted, click the backspace of your keyboard to delete it and enter the following
+              figure to replace it: <strong>0.1</strong>. See the clip below on how to complete this</li>
+
+              <p style="text-align: center;"><img src="https://imgur.com/A6ghwpI.png" alt="bog2_backdrop" width="700px" border="5px"></p>
+      <figcaption style="text-align: center;">Controlling the animation speed</figcaption>
+
+
+      <p>Congratulations!!!. We've created our first sprite animation in Scratch. 
+        <li>To see how it works, move your cursor to the <strong style="color:navy">PROGRAM CONTROL</strong> 
+              panel and click on the green flag icon option that looks like this image <img src="https://i.ibb.co/x5PBK70/flag.png" alt="flag" border="0"></a></li>
+              
+              <li>Upon clicking on the icon, you should see our sprite, Dog2, animated in a manner similar to the clip below</li>
+
+        <p style="text-align: center;"><img src="https://imgur.com/nCN4tun.png" alt="bog2_backdrop" width="700px" border="5px"></p>
+      <figcaption style="text-align: center;">Animated Srite</figcaption>
+
+
+
+      <li>To stop the animation, click the red octagon icon next to the flag icon on the <strong style="color:navy">PROGRAM CONTROL</strong> panel</li>
+              <li> Now, lets save our project. To do this, we move our cursor to the menu bar at the top, and then click on the tab labeled <strong style="color:navy">Untitled-#</strong>.</li> 
+              <li>Doing this highlights the label, and we can either delete it outrightly or edit it with a preferred label. I will label my project <strong style="color:navy">Dog2 Animation</strong></li>
+              <li>So, that's it. Thanks for sticking around for this tutorial</li>
+              </ul><br><br>
+   
+
+
+   <!-- <table>
+      
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+      </tr>
+      
+      <tr>
+        <td>Display	</td>
+        <td>Specifies the type of box used for an HTML element</td>
+        
+        <tr>
+        <td>Flex-direction</td>
+        <td>Specifies the direction of the flexible items inside a flex container</td>
+      </tr>
+      
+      <tr>
+        <td>Justify-content</td>
+        <td>Horizontally aligns the flex items when the items do not use all available space on the main-axis</td>
+      </tr>
+      
+      <tr>
+        <td>Align-items</td>
+        <td>Vertically aligns the flex items when the items do not use all available space on the cross-axis</td>
+      </tr>
+      
+      <tr>
+        <td>Flex-wrap</td>
+        <td>Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</td>
+      </tr>
+      
+        <tr>
+        <td>Align-content</td>
+        <td>Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines</td>
+      </tr>
+      
+       <tr>
+        <td>Flex-flow</td>
+        <td>A shorthand property for flex-direction and flex-wrap</td>
+      </tr>
+      
+        <tr>
+        <td>Order</td>
+        <td>Specifies the order of a flexible item relative to the rest of the flex items inside the same container</td>
+      </tr>
+      
+        <tr>
+        <td>Align-self</td>
+        <td>Used on flex items. Overrides the container's align-items property</td>
+      </tr>
+      
+        <tr>
+        <td>Flex</td>
+        <td>A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</td>
+      </tr>
+    </table>
+   
+    <p></p>--->
+  </section>
+  
+  <section class="main-section" id="Resources">
+    <header>Summary</header>
+    <p>In this lesson, we familiarized ourselves with the Scratch program and GUI. We then created an animated sprite by first choosing a sprite then selecting a backdrop, and then used various menu functions to animate our sprite</p>
+    <p>To learn more about Scratch, check out the following free resources:</p>
+    <ul>
+      <li><a href="https://codetolearn.withgoogle.com/learn_scratch/">Google's Code to Learn Contest 2020</a></li>
+      <li><a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted">Step-by-Step tutorial</a> created by <a href="https://scratch.mit.edu/">Scratch MIT</a></li>
+      <li><a href="https://www.edx.org/learn/scratch-programming">EDX Course</a> (Free online)</li>
+      <li><a href="https://www.classcentral.com/course/edx-scratch-programming-for-kids-8-12112">Class Central</a></li>
+    </ul>
+  </section>
+  
+  </div>
+  
+ 
+</main>
+<footer>
+<p style="text-align: center; font-size: 12px"> Copyright. Sheriff Ola | 2019</p></footer>
+<!-- partial -->
+  
+</body>
+</html>
